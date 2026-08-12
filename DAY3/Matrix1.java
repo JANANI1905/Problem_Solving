@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Matrix1 {
+    public static void main(String[] args) {
+        int[][] matrix = new int[3][3];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("The 3x3 Matrix is:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
